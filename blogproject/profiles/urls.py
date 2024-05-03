@@ -1,5 +1,5 @@
 from django.urls import path
-
+from . import views
 urlpatterns = [
-    # path('admin/',),
+    path('add/',views.addProfile,name='addProfile'),
 ]

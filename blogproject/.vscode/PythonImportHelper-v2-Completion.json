@@ -176,6 +176,14 @@
         "documentation": {}
     },
     {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
         "label": "Author",
         "importPath": "author.models",
         "description": "author.models",
@@ -367,6 +375,14 @@
         "description": "categories.models",
         "isExtraImport": true,
         "detail": "categories.models",
+        "documentation": {}
+    },
+    {
+        "label": "Profile",
+        "importPath": "profiles.models",
+        "description": "profiles.models",
+        "isExtraImport": true,
+        "detail": "profiles.models",
         "documentation": {}
     },
     {
@@ -712,6 +728,15 @@
         "documentation": {}
     },
     {
+        "label": "AddProfile",
+        "kind": 6,
+        "importPath": "profiles.forms",
+        "description": "profiles.forms",
+        "peekOfCode": "class AddProfile(forms.ModelForm):\n    class Meta:\n        model = Profile\n        fields = '__all__'",
+        "detail": "profiles.forms",
+        "documentation": {}
+    },
+    {
         "label": "Profile",
         "kind": 6,
         "importPath": "profiles.models",
@@ -725,8 +750,17 @@
         "kind": 5,
         "importPath": "profiles.urls",
         "description": "profiles.urls",
-        "peekOfCode": "urlpatterns = [\n    # path('admin/',),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('add/',views.addProfile,name='addProfile'),\n]",
         "detail": "profiles.urls",
+        "documentation": {}
+    },
+    {
+        "label": "addProfile",
+        "kind": 2,
+        "importPath": "profiles.views",
+        "description": "profiles.views",
+        "peekOfCode": "def addProfile(request):\n    return render(request,'add_profile.html')",
+        "detail": "profiles.views",
         "documentation": {}
     },
     {
