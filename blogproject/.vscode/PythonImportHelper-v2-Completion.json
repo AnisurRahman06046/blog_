@@ -249,6 +249,22 @@
         "documentation": {}
     },
     {
+        "label": "Category",
+        "importPath": "categories.models",
+        "description": "categories.models",
+        "isExtraImport": true,
+        "detail": "categories.models",
+        "documentation": {}
+    },
+    {
+        "label": "Author",
+        "importPath": "author.models",
+        "description": "author.models",
+        "isExtraImport": true,
+        "detail": "author.models",
+        "documentation": {}
+    },
+    {
         "label": "sys",
         "kind": 6,
         "isExtraImport": true,
@@ -498,6 +514,15 @@
         "description": "posts.apps",
         "peekOfCode": "class PostsConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'posts'",
         "detail": "posts.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Post",
+        "kind": 6,
+        "importPath": "posts.models",
+        "description": "posts.models",
+        "peekOfCode": "class Post(models.Model):\n    title = models.CharField(max_length=50)\n    content = models.TextField()\n    category = models.ManyToManyField(Category) \n    author = models.ForeignKey(Author,on_delete=models.CASCADE)",
+        "detail": "posts.models",
         "documentation": {}
     },
     {
