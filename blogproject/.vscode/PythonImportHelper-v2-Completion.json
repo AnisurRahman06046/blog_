@@ -638,8 +638,17 @@
         "kind": 5,
         "importPath": "posts.urls",
         "description": "posts.urls",
-        "peekOfCode": "urlpatterns = [\n    # path('admin/',),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('all-posts/', views.posts,name=\"posts\"),\n]",
         "detail": "posts.urls",
+        "documentation": {}
+    },
+    {
+        "label": "posts",
+        "kind": 2,
+        "importPath": "posts.views",
+        "description": "posts.views",
+        "peekOfCode": "def posts(request):\n    return render(request,'post.html')",
+        "detail": "posts.views",
         "documentation": {}
     },
     {
