@@ -474,6 +474,15 @@
         "documentation": {}
     },
     {
+        "label": "Category",
+        "kind": 6,
+        "importPath": "categories.models",
+        "description": "categories.models",
+        "peekOfCode": "class Category(models.Model):\n    name = models.CharField(max_length=100)",
+        "detail": "categories.models",
+        "documentation": {}
+    },
+    {
         "label": "urlpatterns",
         "kind": 5,
         "importPath": "categories.urls",
