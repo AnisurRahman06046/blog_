@@ -168,6 +168,38 @@
         "documentation": {}
     },
     {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "Author",
+        "importPath": "author.models",
+        "description": "author.models",
+        "isExtraImport": true,
+        "detail": "author.models",
+        "documentation": {}
+    },
+    {
+        "label": "Author",
+        "importPath": "author.models",
+        "description": "author.models",
+        "isExtraImport": true,
+        "detail": "author.models",
+        "documentation": {}
+    },
+    {
+        "label": "Author",
+        "importPath": "author.models",
+        "description": "author.models",
+        "isExtraImport": true,
+        "detail": "author.models",
+        "documentation": {}
+    },
+    {
         "label": "TestCase",
         "importPath": "django.test",
         "description": "django.test",
@@ -330,22 +362,6 @@
         "documentation": {}
     },
     {
-        "label": "Author",
-        "importPath": "author.models",
-        "description": "author.models",
-        "isExtraImport": true,
-        "detail": "author.models",
-        "documentation": {}
-    },
-    {
-        "label": "Author",
-        "importPath": "author.models",
-        "description": "author.models",
-        "isExtraImport": true,
-        "detail": "author.models",
-        "documentation": {}
-    },
-    {
         "label": "sys",
         "kind": 6,
         "isExtraImport": true,
@@ -373,6 +389,15 @@
         "documentation": {}
     },
     {
+        "label": "AuthorForm",
+        "kind": 6,
+        "importPath": "author.forms",
+        "description": "author.forms",
+        "peekOfCode": "class AuthorForm(forms.ModelForm):\n    class Meta:\n        model = Author\n        fields = '__all__'",
+        "detail": "author.forms",
+        "documentation": {}
+    },
+    {
         "label": "Author",
         "kind": 6,
         "importPath": "author.models",
@@ -386,8 +411,17 @@
         "kind": 5,
         "importPath": "author.urls",
         "description": "author.urls",
-        "peekOfCode": "urlpatterns = [\n    # path('admin/',),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('add-author/',views.addAuthor,name='addAuthor'),\n]",
         "detail": "author.urls",
+        "documentation": {}
+    },
+    {
+        "label": "addAuthor",
+        "kind": 2,
+        "importPath": "author.views",
+        "description": "author.views",
+        "peekOfCode": "def addAuthor(request):\n    author_form  = forms.AuthorForm()\n    return render(request,'add_author.html',{'form':author_form})",
+        "detail": "author.views",
         "documentation": {}
     },
     {
