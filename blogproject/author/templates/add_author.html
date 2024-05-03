@@ -4,7 +4,7 @@
 
 
 <h1 class="text-3xl"> this is add author page</h1>
-<form class="w-36 mx-auto my-auto " action="">
+<form class="w-36 mx-auto my-auto " method="post">
     {% csrf_token %}
     {{form.as_p}}
     <button class="bg-blue-900 text-white p-3 round rounded-lg mt-3">Add Author</button>
