@@ -320,6 +320,14 @@
         "documentation": {}
     },
     {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
         "label": "render",
         "importPath": "django.shortcuts",
         "description": "django.shortcuts",
@@ -390,6 +398,14 @@
         "description": "categories.models",
         "isExtraImport": true,
         "detail": "categories.models",
+        "documentation": {}
+    },
+    {
+        "label": "CategoryForm",
+        "importPath": "categories.forms",
+        "description": "categories.forms",
+        "isExtraImport": true,
+        "detail": "categories.forms",
         "documentation": {}
     },
     {
@@ -703,6 +719,15 @@
         "description": "categories.urls",
         "peekOfCode": "urlpatterns = [\n    # path('admin/',),\n]",
         "detail": "categories.urls",
+        "documentation": {}
+    },
+    {
+        "label": "addCategory",
+        "kind": 2,
+        "importPath": "categories.views",
+        "description": "categories.views",
+        "peekOfCode": "def addCategory(request):\n    if request.method=='POST':\n        category = CategoryForm(request.POST)\n        if category.is_valid():\n            category.save()\n            return redirect('addCategory')\n    else:\n        category = CategoryForm()\n    return render(request,'add_categories.html',{'form':category})",
+        "detail": "categories.views",
         "documentation": {}
     },
     {
