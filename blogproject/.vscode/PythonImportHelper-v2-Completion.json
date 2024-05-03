@@ -152,6 +152,14 @@
         "documentation": {}
     },
     {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
         "label": "path",
         "importPath": "django.urls",
         "description": "django.urls",
@@ -434,7 +442,7 @@
         "kind": 5,
         "importPath": "blogproject.urls",
         "description": "blogproject.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('author/',include('author.urls')),\n    path('posts/',include('posts.urls')),\n    path('categories/',include('categories.urls')),\n    path('profiles/',include('profiles.urls')),\n]",
         "detail": "blogproject.urls",
         "documentation": {}
     },
