@@ -1,5 +1,101 @@
 [
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "admin",
         "importPath": "django.contrib",
         "description": "django.contrib",
@@ -69,38 +165,6 @@
         "description": "django.apps",
         "isExtraImport": true,
         "detail": "django.apps",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
         "documentation": {}
     },
     {
@@ -249,6 +313,15 @@
         "documentation": {}
     },
     {
+        "label": "django.db.models.deletion",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.db.models.deletion",
+        "description": "django.db.models.deletion",
+        "detail": "django.db.models.deletion",
+        "documentation": {}
+    },
+    {
         "label": "Category",
         "importPath": "categories.models",
         "description": "categories.models",
@@ -282,6 +355,15 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "author.migrations.0001_initial",
+        "description": "author.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Author',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('name', models.CharField(max_length=100)),",
+        "detail": "author.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
         "label": "AuthorConfig",
         "kind": 6,
         "importPath": "author.apps",
@@ -295,7 +377,7 @@
         "kind": 6,
         "importPath": "author.models",
         "description": "author.models",
-        "peekOfCode": "class Author(models.Model):\n    name = models.CharField(max_length=100)\n    bio = models.TextField()\n    phone_no = models.CharField(max_length=12)",
+        "peekOfCode": "class Author(models.Model):\n    name = models.CharField(max_length=100)\n    bio = models.TextField()\n    phone_no = models.CharField(max_length=12)\n    def __str__(self):\n        return self.name",
         "detail": "author.models",
         "documentation": {}
     },
@@ -304,7 +386,7 @@
         "kind": 5,
         "importPath": "author.urls",
         "description": "author.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/',),\n]",
+        "peekOfCode": "urlpatterns = [\n    # path('admin/',),\n]",
         "detail": "author.urls",
         "documentation": {}
     },
@@ -489,6 +571,15 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "categories.migrations.0001_initial",
+        "description": "categories.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Category',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('name', models.CharField(max_length=100)),",
+        "detail": "categories.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
         "label": "CategoriesConfig",
         "kind": 6,
         "importPath": "categories.apps",
@@ -502,7 +593,7 @@
         "kind": 6,
         "importPath": "categories.models",
         "description": "categories.models",
-        "peekOfCode": "class Category(models.Model):\n    name = models.CharField(max_length=100)",
+        "peekOfCode": "class Category(models.Model):\n    name = models.CharField(max_length=100)\n    def __str__(self):\n        return self.name",
         "detail": "categories.models",
         "documentation": {}
     },
@@ -511,8 +602,17 @@
         "kind": 5,
         "importPath": "categories.urls",
         "description": "categories.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/',),\n]",
+        "peekOfCode": "urlpatterns = [\n    # path('admin/',),\n]",
         "detail": "categories.urls",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "posts.migrations.0001_initial",
+        "description": "posts.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        ('author', '0001_initial'),\n        ('categories', '0001_initial'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Post',\n            fields=[",
+        "detail": "posts.migrations.0001_initial",
         "documentation": {}
     },
     {
@@ -529,7 +629,7 @@
         "kind": 6,
         "importPath": "posts.models",
         "description": "posts.models",
-        "peekOfCode": "class Post(models.Model):\n    title = models.CharField(max_length=50)\n    content = models.TextField()\n    category = models.ManyToManyField(Category) \n    author = models.ForeignKey(Author,on_delete=models.CASCADE)",
+        "peekOfCode": "class Post(models.Model):\n    title = models.CharField(max_length=50)\n    content = models.TextField()\n    category = models.ManyToManyField(Category) \n    author = models.ForeignKey(Author,on_delete=models.CASCADE)\n    def __str__(self):\n        return f'{self.title} - {self.content} - {self.category} - {self.author}'",
         "detail": "posts.models",
         "documentation": {}
     },
@@ -538,8 +638,17 @@
         "kind": 5,
         "importPath": "posts.urls",
         "description": "posts.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/',),\n]",
+        "peekOfCode": "urlpatterns = [\n    # path('admin/',),\n]",
         "detail": "posts.urls",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "profiles.migrations.0001_initial",
+        "description": "profiles.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        ('author', '0001_initial'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Profile',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
+        "detail": "profiles.migrations.0001_initial",
         "documentation": {}
     },
     {
@@ -556,7 +665,7 @@
         "kind": 6,
         "importPath": "profiles.models",
         "description": "profiles.models",
-        "peekOfCode": "class Profile(models.Model):\n    name = models.CharField(max_length=100)\n    about = models.TextField()\n    author = models.OneToOneField(Author,on_delete=models.CASCADE)",
+        "peekOfCode": "class Profile(models.Model):\n    name = models.CharField(max_length=100)\n    about = models.TextField()\n    author = models.OneToOneField(Author,on_delete=models.CASCADE)\n    def __str__(self):\n        return f'{self.name} - {self.about} - {self.author}'",
         "detail": "profiles.models",
         "documentation": {}
     },
@@ -565,7 +674,7 @@
         "kind": 5,
         "importPath": "profiles.urls",
         "description": "profiles.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/',),\n]",
+        "peekOfCode": "urlpatterns = [\n    # path('admin/',),\n]",
         "detail": "profiles.urls",
         "documentation": {}
     },
