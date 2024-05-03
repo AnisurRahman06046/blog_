@@ -328,6 +328,14 @@
         "documentation": {}
     },
     {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
         "label": "os",
         "kind": 6,
         "isExtraImport": true,
@@ -383,6 +391,14 @@
         "description": "profiles.models",
         "isExtraImport": true,
         "detail": "profiles.models",
+        "documentation": {}
+    },
+    {
+        "label": "ProfileForm",
+        "importPath": "profiles.forms",
+        "description": "profiles.forms",
+        "isExtraImport": true,
+        "detail": "profiles.forms",
         "documentation": {}
     },
     {
@@ -728,11 +744,11 @@
         "documentation": {}
     },
     {
-        "label": "AddProfile",
+        "label": "ProfileForm",
         "kind": 6,
         "importPath": "profiles.forms",
         "description": "profiles.forms",
-        "peekOfCode": "class AddProfile(forms.ModelForm):\n    class Meta:\n        model = Profile\n        fields = '__all__'",
+        "peekOfCode": "class ProfileForm(forms.ModelForm):\n    class Meta:\n        model = Profile\n        fields = '__all__'",
         "detail": "profiles.forms",
         "documentation": {}
     },
@@ -759,7 +775,7 @@
         "kind": 2,
         "importPath": "profiles.views",
         "description": "profiles.views",
-        "peekOfCode": "def addProfile(request):\n    return render(request,'add_profile.html')",
+        "peekOfCode": "def addProfile(request):\n    if request.method=='POST':\n        author_profile = ProfileForm(request.POST)\n        if author_profile.is_valid():\n            author_profile.save()\n            return redirect('addProfile')\n    else:\n        author_profile= ProfileForm()\n    return render(request,'add_profile.html',{'form':author_profile})",
         "detail": "profiles.views",
         "documentation": {}
     },
