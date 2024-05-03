@@ -265,6 +265,14 @@
         "documentation": {}
     },
     {
+        "label": "Author",
+        "importPath": "author.models",
+        "description": "author.models",
+        "isExtraImport": true,
+        "detail": "author.models",
+        "documentation": {}
+    },
+    {
         "label": "sys",
         "kind": 6,
         "isExtraImport": true,
@@ -541,6 +549,15 @@
         "description": "profiles.apps",
         "peekOfCode": "class ProfilesConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'profiles'",
         "detail": "profiles.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Profile",
+        "kind": 6,
+        "importPath": "profiles.models",
+        "description": "profiles.models",
+        "peekOfCode": "class Profile(models.Model):\n    name = models.CharField(max_length=100)\n    about = models.TextField()\n    author = models.OneToOneField(Author,on_delete=models.CASCADE)",
+        "detail": "profiles.models",
         "documentation": {}
     },
     {
